@@ -23,6 +23,19 @@ int main(){
 		getline(ifs,line); // Read the next line
 	}
 
+	//This code will work as well
+	/*
+
+	while(1){
+		getline(ifs, line);
+		if(!ifs)
+			break;
+		cout<<line<<endl; //process the line
+	}
+	*/
+
+
+
 	// Close the file
 	ifs.close();
 	return 0;
