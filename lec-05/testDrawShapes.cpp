@@ -1,7 +1,9 @@
-//asciiArt.cpp
+//testDrawShapes.cpp
 
 #include <iostream>
 #include <cstdlib>
+#include "drawShapes.h"
+#include "tdd.h"
 using namespace std;
 
 void testdrawTriangle(){
@@ -21,25 +23,6 @@ string exp2=
 string act2= drawTriangle(5);
 assertEqual(exp2, act2, " width:5");
 
-
-/*
-width = 3, num rows = 2
-
-width = 5, rows = 3
-
-
-  * 
- ***
-*****
-
-width = 7, rows = 4 
-In general rows = (width+1)/2
-
-   * 
-  ***
- *****
-*******
-*/
 
 }
 
