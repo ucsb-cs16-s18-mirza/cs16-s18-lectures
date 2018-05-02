@@ -11,7 +11,6 @@ double averageScore(double sc[], int length){
 	for(int i = 0; i< length; i++){
 		sum +=  sc[i];
 	}
-    //sc poses an array, but its really something else (next lecture)
    /* cout<<"Size of scores in function : "<<sizeof(sc)<<endl;
 	cout<<"Size of a double in function: "<<sizeof(double)<<endl;
 */
@@ -25,7 +24,7 @@ int main(){
 
 	double result;
 	result = averageScore(scores, 5);
-
+    cout<<"What is scores for real? "<<scores<<endl;
 	cout<<"Average calculated by function: "<<result<<endl;
 
 
