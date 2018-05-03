@@ -13,7 +13,6 @@ int main(){
 	int a =30, b = 40;
 	swapValue(&a, &b);
 	cout<<"A= "<< a << " B = "<< b<<endl;
-/*
 
 	int* p;
 	int y = 3;
@@ -29,7 +28,6 @@ int main(){
 	cout<<"Value of *p is :"<<*p<<endl;
 	cout<<"Value of y is :"<<y<<endl;
 
-*/
 
 
 }
