@@ -2,31 +2,34 @@
 using namespace std;
 
 
-double averageScore(double sc[], int length);
+void swapValue(int* x, int* y){
+	int tmp = *x;
+	*x = *y;
+	*y = tmp;
+
+}
 
 int main(){
+	int a =30, b = 40;
+	swapValue(&a, &b);
+	cout<<"A= "<< a << " B = "<< b<<endl;
+/*
 
-	double scores[5]={100, 90, 99, 50, 40};
+	int* p;
+	int y = 3;
+	p = &y;
+	cout<<"Address of p is :"<<&p<<endl;
+	cout<<"Value of p is :"<<p<<endl;
+	cout<<"Value of *p is :"<<*p<<endl;
+	cout<<"Value of y is :"<<y<<endl;
+	*p = 5;
+	cout<<"After changing y to 5"<<endl;
+	cout<<"Address of p is :"<<&p<<endl;
+	cout<<"Value of p is :"<<p<<endl;
+	cout<<"Value of *p is :"<<*p<<endl;
+	cout<<"Value of y is :"<<y<<endl;
 
-	for(int i = 0; i< 5; i++){
-		cout<<scores[i]<<endl;
-	}
-
-	cout <<"Printing using the c++ 11 range based for loop"<<endl;
-	for(double item : scores){
-		cout<<item<<endl;
-	}
-	
-	double sum = 0;
-	for(int i = 0; i< 5; i++){
-		sum +=  scores[i];
-	}
-	cout<<"Size of scores : "<<sizeof(scores)<<endl;
-	cout<<"Size of a double: "<<sizeof(double)<<endl;
-
-	cout<< "Average midterm score is : "<< sum/(sizeof(scores)/sizeof(double))<<endl;
-
-
+*/
 
 
 }
