@@ -68,6 +68,7 @@ int sumElements(LinkedList* list){
 	}
 	return result;
 }
+
 bool search(LinkedList* list, int value){
 	Node* tmp = list->head;
 	
@@ -112,8 +113,6 @@ void insertIntoSortedList(LinkedList* list, int value){
 		p->next = n;
 
 	}
-		
-	
 
 }
 
