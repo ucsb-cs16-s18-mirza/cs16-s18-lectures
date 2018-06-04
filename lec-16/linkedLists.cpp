@@ -69,6 +69,22 @@ int sumElements(LinkedList* list){
 	return result;
 }
 
+
+int sumList(Node* head){
+	if(head==0) return 0;
+
+	if(head->next ==0) return head->data;
+
+	int result;
+	result=sumList(head->next);
+	return result +head->data;
+
+}
+
+int minList(Node* head){
+
+
+}
 bool search(LinkedList* list, int value){
 	Node* tmp = list->head;
 	
@@ -141,24 +157,6 @@ int main(){
 	cout<<"Is 100 in the list? "<<search(&mylist, 100)<<endl;
 	cout<<"Is -100 in the list? "<<search(&mylist, -100)<<endl;
 
-	LinkedList sortedList;
-	sortedList.head = 0;
-	sortedList.tail =0;
-	
-	cout<<"Insert 10 5 25 100 50 45 into a sorted list"<<endl;
-	insertIntoSortedList(&sortedList, 10);
-
-	insertIntoSortedList(&sortedList, 5);
-
-	insertIntoSortedList(&sortedList, 25);
-
-	insertIntoSortedList(&sortedList, 100);
-	
-	insertIntoSortedList(&sortedList, 50);
-
-	insertIntoSortedList(&sortedList, 45);
-	cout<<"Values in the sorted list in order: "<<endl;
-	printList(&sortedList);
 
 
 }
