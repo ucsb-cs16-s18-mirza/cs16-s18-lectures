@@ -83,6 +83,42 @@ int sumList(Node* head){
 
 int minList(Node* head){
 
+	// Smallest valid input is a list with one element
+	if(head->next == 0)
+		return head->data;
+	if(head->next->next ==0){
+		if(head->data < head->next->data){
+			return head->data;
+		} else{
+			return head->next->data;
+		}
+	}
+
+	int tmp = minList(head->next); //partial result from solution to a smaller version of the problem
+
+	if(tmp<head->data)
+		return tmp;
+	else
+		return head->data;
+
+}
+
+
+bool search(Node* head, int value){
+	if(head==0)
+		return false;
+	if(head->next ==0){
+		if(head->data == value){
+			return true;
+
+		}else
+			return false;
+	}
+
+	if(head->data == value)
+		return true;
+	else
+		return search(head->next, value);
 
 }
 bool search(LinkedList* list, int value){
